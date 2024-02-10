@@ -21,10 +21,9 @@
   color: #3b4252;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
+  row-gap: 15px;
+  max-height: 110vh;
+  /* overflow-y: scroll; */
 }
 
 .icon {
@@ -44,6 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 4px 0px #3b4252ef;
 }
 .span {
   height: 2px;
@@ -88,6 +88,8 @@
   }
   .repos-container {
     overflow-y: scroll;
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -96,4 +98,29 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+.pop-up-container {
+  position: absolute;
+  background-color: #3b4252ef;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.pop-up-modal {
+  background-color: white;
+  min-width: 320px;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px 1px #3b4252ef;
 }
