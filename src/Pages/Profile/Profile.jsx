@@ -46,11 +46,11 @@ function Profile() {
             <img
               src={userData.avatar_url}
               alt={userData.avatar_html}
-              className="img-fluid w-100 "
+              className="img-fluid w-100 rounded-circle"
             />
           </div>
 
-          <div className="px-3 ">
+          <div className="px-3 d-flex flex-column align-items-center mt-2 ">
             <h3>{userData?.name}</h3>
             <h4>@{userData?.login}</h4>
           </div>
